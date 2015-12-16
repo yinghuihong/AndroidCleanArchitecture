@@ -5,22 +5,22 @@ import com.aspirecn.familyplatform.domain.bundle.common.repository.UserRepositor
 
 import java.util.List;
 
-import javax.inject.Inject;
-import javax.inject.Singleton;
-
 import rx.Observable;
 import rx.Subscriber;
+
+//import javax.inject.Inject;
+//import javax.inject.Singleton;
 
 /**
  * Created by yinghuihong on 15/11/19.
  */
-@Singleton
+//@Singleton
 public class UserDataRepository implements UserRepository {
 
-    @Inject
-    UserDataRepository() {
-
-    }
+//    @Inject
+//    UserDataRepository() {
+//
+//    }
 
     @Override
     public Observable<String> login(String username, String password) {

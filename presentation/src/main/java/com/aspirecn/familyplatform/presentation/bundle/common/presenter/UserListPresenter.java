@@ -10,6 +10,11 @@ import com.aspirecn.familyplatform.presentation.common.presenter.Presenter;
 public class UserListPresenter implements Presenter {
 
     @Override
+    public void start() {
+
+    }
+
+    @Override
     public void resume() {
 
     }

@@ -19,6 +19,9 @@ import dagger.Provides;
 @Module
 public class LoginModule {
 
+    /**
+     * 采用对象封装参数列表，用于延后具体参数的赋值
+     */
     private LoginArgs args;
 
     public LoginModule(LoginArgs args) {

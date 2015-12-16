@@ -7,6 +7,12 @@ package com.aspirecn.familyplatform.presentation.common.presenter;
 public interface Presenter {
     /**
      * Method that control the lifecycle of the view. It should be called in the view's
+     * (Activity or Fragment) onStart() method.
+     */
+    void start();
+
+    /**
+     * Method that control the lifecycle of the view. It should be called in the view's
      * (Activity or Fragment) onResume() method.
      */
     void resume();

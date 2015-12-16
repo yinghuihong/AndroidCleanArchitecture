@@ -62,5 +62,27 @@ public class LoginActivity extends Activity {
         });
     }
 
+    @Override
+    protected void onStart() {
+        super.onStart();
+        loginPresenter.start();
+    }
 
+    @Override
+    protected void onResume() {
+        super.onResume();
+        loginPresenter.resume();
+    }
+
+    @Override
+    protected void onPause() {
+        loginPresenter.pause();
+        super.onPause();
+    }
+
+    @Override
+    protected void onDestroy() {
+        loginPresenter.destroy();
+        super.onDestroy();
+    }
 }

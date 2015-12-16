@@ -6,16 +6,14 @@ package com.aspirecn.familyplatform.domain.bundle.common;
 public class User {
 
     private final int userId;
-
-    public User(int userId) {
-        this.userId = userId;
-    }
-
     private String coverUrl;
     private String fullName;
     private String email;
     private String description;
     private int followers;
+    public User(int userId) {
+        this.userId = userId;
+    }
 
     public int getUserId() {
         return userId;
@@ -61,7 +59,8 @@ public class User {
         this.followers = followers;
     }
 
-    @Override public String toString() {
+    @Override
+    public String toString() {
         StringBuilder stringBuilder = new StringBuilder();
 
         stringBuilder.append("***** User Details *****\n");

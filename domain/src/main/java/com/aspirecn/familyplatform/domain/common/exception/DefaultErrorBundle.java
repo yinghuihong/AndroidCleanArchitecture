@@ -1,7 +1,7 @@
 package com.aspirecn.familyplatform.domain.common.exception;
 
 /**
- *  Wrapper around Exceptions used to manage default errors.
+ * Wrapper around Exceptions used to manage default errors.
  */
 public class DefaultErrorBundle implements ErrorBundle {
 

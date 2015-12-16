@@ -12,6 +12,7 @@ import rx.Observable;
 public interface UserRepository {
 
     Observable<String> login(String username, String password);
+
     /**
      * Get an {@link rx.Observable} which will emit a List of {@link User}.
      */

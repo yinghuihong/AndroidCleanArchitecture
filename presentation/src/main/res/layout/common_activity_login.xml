@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
 
     <EditText
         android:id="@+id/et_username"
         android:layout_width="match_parent"
-        android:hint="@string/app_name"
         android:layout_height="80dp"
-        android:layout_margin="10dp" />
+        android:layout_margin="10dp"
+        android:hint="@string/app_name"/>
 
     <EditText
         android:id="@+id/et_password"
-        android:inputType="textPassword"
         android:layout_width="match_parent"
         android:layout_height="80dp"
-        android:layout_margin="10dp" />
+        android:layout_margin="10dp"
+        android:inputType="textPassword"/>
 
     <Button
         android:id="@+id/btn_login"
         android:layout_width="match_parent"
-        android:text="@string/common_login_action"
         android:layout_height="50dp"
-        android:layout_margin="10dp" />
+        android:layout_margin="10dp"
+        android:text="@string/common_login_action"/>
 </LinearLayout>

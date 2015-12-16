@@ -35,20 +35,25 @@ public class ApplicationModule {
 
     @Provides
     @Singleton
-    UserRepository provideUserRepository(UserDataRepository userDataRepository) {
-        return userDataRepository;
+    UserRepository provideUserRepository() {
+        return new UserDataRepository();
     }
 
     @Provides
     @Singleton
-    ThreadExecutor provideThreadExecutor(JobExecutor jobExecutor) {
-        return jobExecutor;
+    ThreadExecutor provideThreadExecutor() {
+        return new JobExecutor();
     }
 
     @Provides
     @Singleton
-    PostExecutionThread providePostExecutionThread(UIThread uiThread) {
-        return uiThread;
+    PostExecutionThread providePostExecutionThread() {
+        return new UIThread();
     }
 
+//    @Provides
+//    @Singleton
+//    RxBus provideRxBus() {
+//        return new RxBus();
+//    }
 }
